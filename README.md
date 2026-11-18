@@ -66,9 +66,64 @@ Loading needs an internet connection the first time.
 | `age` | Age in years at baseline (range 12–70) |
 | `cid` | Target. 1 = clinical failure event, 0 = censored. The event rate is about 24%. |
 
-**Biological context.**
-- **CD4+ (helper) T-cells** coordinate the adaptive immune response. HIV infects and destroys them, which makes CD4 count the primary marker of disease stage.
-- **CD8+ (cytotoxic) T-cells** kill virus-infected cells. Their counts often rise during HIV infection.
+## Biological context
+
+### T-cell subsets
+
+- **CD4+ (helper) T-cells** coordinate the adaptive immune response. They activate B-cells, CD8+ T-cells, and macrophages by releasing signaling molecules (cytokines). HIV infects and destroys them, which makes CD4 count the primary marker of disease stage and immune function.
+- **CD8+ (cytotoxic) T-cells** recognize and kill virus-infected cells. During HIV infection they expand in response to the virus, so their counts often stay normal or rise even as CD4 counts fall.
+
+### Why CD4 cells decline
+
+HIV enters CD4+ T-cells through the CD4 receptor and a co-receptor (CCR5 or CXCR4). CD4 counts fall through several mechanisms:
+
+- Direct killing of infected cells by the virus
+- Destruction of infected cells by CD8+ T-cells and other immune mechanisms
+- Chronic immune activation, which drives bystander cell death and exhausts the T-cell supply
+- Damage to lymphoid tissue (especially in the gut), which impairs T-cell replenishment
+
+### Why CD8 counts often rise
+
+CD8+ T-cells mount a strong response against HIV, which is partly responsible for the initial drop in viral load after acute infection. Because the virus is never fully cleared, CD8+ cells are stimulated continuously and expand. Over time they can become exhausted, with reduced ability to kill infected cells. In late-stage disease, CD8 counts may eventually fall as well.
+
+### CD4/CD8 ratio
+
+The ratio of CD4 to CD8 counts is a useful marker of immune health and is often analyzed alongside the raw counts.
+
+- A healthy adult typically has a ratio of roughly **1.0 to 4.0**.
+- A ratio **below 1.0** ("inverted") reflects immune dysfunction and is common in untreated HIV.
+- The ratio is associated with risk of non-AIDS illnesses (cardiovascular disease, certain cancers) and with overall mortality, even in people on treatment.
+
+### Reference ranges and staging
+
+Typical adult values:
+
+| Measure | Typical healthy range |
+|---|---|
+| CD4 count | ~500-1,500 cells/µL |
+| CD8 count | ~200-1,000 cells/µL |
+| CD4/CD8 ratio | ~1.0-4.0 |
+
+The CDC stages HIV infection by CD4 count (or percentage):
+
+| Stage | CD4 count (cells/µL) | CD4 % |
+|---|---|---|
+| Stage 1 | ≥ 500 | ≥ 26% |
+| Stage 2 | 200-499 | 14-25% |
+| Stage 3 (AIDS) | < 200 | < 14% |
+
+A CD4 count below 200 cells/µL leaves a person highly vulnerable to opportunistic infections.
+
+### Effect of treatment
+
+Antiretroviral therapy (ART) suppresses viral replication, which typically allows CD4 counts to recover and CD8 counts to decline. The ratio often improves but does not always return to normal, especially when treatment starts late.
+
+### Related measures
+
+- **Viral load** (HIV RNA copies/mL) measures how much virus is in the blood. It complements CD4 count: viral load shows how active the infection is, while CD4 count shows how much immune damage has occurred.
+- **Absolute counts vs. percentages**: CD4 percentage (CD4 cells as a share of lymphocytes) is more stable than absolute count, which fluctuates with time of day, illness, and lab variation.
+
+> **Note:** This section is for background context on the data and is not medical advice.
 
 ### Modeling notes
 
