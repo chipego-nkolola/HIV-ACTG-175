@@ -1,0 +1,16 @@
+# Local clone of the ucimlrepo package (install with `pip install ucimlrepo` instead)
+ucimlrepo/
+
+# macOS
+.DS_Store
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Editor and environment
+.vscode/
+.venv/
+venv/
+.env
